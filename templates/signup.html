@@ -1,0 +1,36 @@
+<!-- templates/index.html -->
+{% extends "master.html" %}
+
+{% block content %}
+  <div class="center">
+     
+    <form action="/signup" method="POST" enctype="multipart/form-data">
+    
+    
+<table>
+<tr>
+<td class="tdalign"> <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required></td>
+
+<td class="tdalign">  <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required></td>		
+
+<td class="tdalign"><label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required></td>	
+
+<td class="tdalign">        <label for="image">Profile Image:</label><br>
+        <input type="file" id="image" name="image" required></td>	
+	</tr>
+<tr>
+<td colspan="3" class="tdalign"><input type="submit" value="Signup"></td>	
+	
+</table>
+
+
+    </form>
+   
+   
+   
+  </div>
+
+{% endblock %}

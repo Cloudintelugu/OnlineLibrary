@@ -1,0 +1,24 @@
+<!-- templates/index.html -->
+{% extends "master.html" %}
+
+{% block content %}
+	<div id="divSignIn" class="center">
+		 
+		<main id="mnSignIn">
+			<form action="/signin" method="POST" id="fmSignIn">
+				<label for="email">Email:</label><br>
+				<input type="email" id="email" name="email" required><br><br>
+
+				<label for="password">Password:</label><br>
+				<input type="password" id="password" name="password" required><br><br>
+
+				<input type="submit" value="Sign In" id="fmSignIn">
+			</form>
+			<p>Don't have an account? <a href="/signup">Sign Up</a></p>
+		</main>
+   
+   
+   
+  </div>
+
+{% endblock %}

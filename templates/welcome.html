@@ -1,0 +1,25 @@
+<!-- templates/index.html -->
+{% extends "SignInmaster.html" %}
+
+{% block content %}
+
+  <div class="center">
+     
+     <main>
+	 <table style="width:100%">
+	 <tr>
+	 <td><h1>Welcome, {{ username }}!</h1>
+        <p>Your details:</p>
+        <p>Email: {{ email }}</p></td>
+	 <td align ="right"><img src="{{image_url}}" alt="Profile Image" width="150"></td>
+	 </tr>
+	 </table>
+        
+        
+    </main>
+   
+   
+   
+  </div>
+
+{% endblock %}
